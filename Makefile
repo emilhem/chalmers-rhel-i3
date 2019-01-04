@@ -137,7 +137,6 @@ i3: $(buildDir)/i3
 # To test if the paths have been set correctly
 pathtests:
 	@echo "LD_LIBRARY_PATH =	$(LD_LIBRARY_PATH)"
-	@echo "LD_LIBRARY_PATH =	$(LD_LIBRARY_PATH)"
 	@echo "LIBRARY_PATH =		$(LIBRARY_PATH)"
 	@echo "LD_RUN_PATH =		$(LD_RUN_PATH)"
 	@echo "PKG_CONFIG_PATH =	$(PKG_CONFIG_PATH)"
