@@ -1,9 +1,11 @@
 # chalmers-rhel-i3
 A big ol' Makefile to build i3 for Chalmers RHEL 7.x machines
 
+## Where will it be placed?
+Currently it is set to end up in `/chalmers/users/USER/usr/`
+
 ## How to use?
 * Make sure that you are on a Chalmers RHEL 7.x machine
-* Create a directory in your home folder named `usr`. Ex: /chalmers/users/USER/usr
 * Run `git clone https://github.com/emilhem/chalmers-rhel-i3.git`
 * Run `cd chalmers-rhel-i3`
 * Run `make`
