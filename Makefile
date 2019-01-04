@@ -134,6 +134,16 @@ xcb-utilUrl					:= https://xcb.freedesktop.org/dist/$(xcb-utilFileName)
 i3: $(buildDir)/i3
 	@# No separate rule, just run dependency
 
+# To test if the paths have been set correctly
+pathtests:
+	@echo "LD_LIBRARY_PATH =	$(LD_LIBRARY_PATH)"
+	@echo "LD_LIBRARY_PATH =	$(LD_LIBRARY_PATH)"
+	@echo "LIBRARY_PATH =		$(LIBRARY_PATH)"
+	@echo "LD_RUN_PATH =		$(LD_RUN_PATH)"
+	@echo "PKG_CONFIG_PATH =	$(PKG_CONFIG_PATH)"
+	@echo "PREFIX =		$(PREFIX)"
+	@echo "PATH =			$(PATH)"
+
 $(dest):
 	mkdir -p $@
 
@@ -143,7 +153,7 @@ $(srcDir):
 $(buildDir):
 	mkdir -p $@
 
-.PHONY: clean fullclean test i3
+.PHONY: clean fullclean test i3 pathtests
 clean:
 	rm -rf $(buildDir)
 
